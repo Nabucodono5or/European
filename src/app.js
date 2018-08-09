@@ -1,3 +1,4 @@
+import './sass/main.scss';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import appComponent from './app.component';
