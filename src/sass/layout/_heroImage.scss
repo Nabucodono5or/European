@@ -1,7 +1,9 @@
+
 .hero-image {
+  color: red;
   position: relative;
   height: 500px;
   overflow: hidden;
-  background: url() no-repeat center;
+  background-image: url($imagem-recurso) no-repeat center;
   background-size: cover;
-} 
+}
