@@ -2,34 +2,34 @@
 
 <div class="container">
 
-  <div ng-repeat="evento in $ctrl.listaDeEventos track by $index">  
+  <div ng-repeat="evento in $ctrl.listaDeEventos track by $index">
     <!-- Sessão de Evento -->
     <div>
       <img src="evento.imagem" alt="" srcset="">
     </div>
-    
+
     <div>
-      <h2>{{ ::evento.nome }}</h2>
-      
+      <h2 class="nova-cor">{{ ::evento.nome }}</h2>
+
       <ul>
         <li> <span> <i class="far fa-clock"></i></span> {{ ::evento.data }}</li>
       </ul>
-  
+
       <ul>
         <li> <span> <i class="fas fa-sign"></i></span>{{ ::evento.endereco }}</li>
       </ul>
-  
+
       <ul>
         <li> <span> <i class="far fa-money-bill-alt"></i></span> ${{ ::evento.custo }}</li>
       </ul>
-  
+
       <p>
         {{ ::evento.desc }}
       </p>
-  
+
       <button>Read More</button>
     </div>
-  
+
   </div>
-  
+
 </div>

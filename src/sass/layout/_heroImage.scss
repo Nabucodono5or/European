@@ -1,9 +1,21 @@
+body,html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+  font-family: sans-serif;
+}
 
-.hero-image {
+.my-hero-image {
   color: red;
   position: relative;
   height: 500px;
+  width: 100%;
   overflow: hidden;
-  background-image: url($imagem-recurso) no-repeat center;
+  background: url($imagem-recurso) no-repeat center;
   background-size: cover;
+}
+
+.nova-cor {
+  color: $minha-cor;
 }
