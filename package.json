@@ -28,6 +28,7 @@
     "babel-angular": "0.0.5",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-html-import-to-string": "0.0.1",
+    "node-sass": "^4.9.3",
     "postcss-modules": "^1.3.2"
   }
 }
