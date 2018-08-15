@@ -7,15 +7,10 @@ body,html {
 }
 
 .my-hero-image {
-  color: red;
   position: relative;
   height: 500px;
   width: 100%;
   overflow: hidden;
   background: url($imagem-recurso) no-repeat center;
   background-size: cover;
-}
-
-.nova-cor {
-  color: $minha-cor;
 }

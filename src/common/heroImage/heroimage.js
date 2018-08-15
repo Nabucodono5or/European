@@ -1,3 +1,4 @@
+import './../../sass/components/teste_componente.scss';
 import angular from 'angular';
 import heroimageComponent from './heroimage.component';
 
