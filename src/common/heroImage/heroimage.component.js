@@ -1,6 +1,9 @@
 import template from './heroimage.html';
 
 let heroimageComponent = {
+  bindings: {
+    out: '<'
+  },
   template,
 }
 

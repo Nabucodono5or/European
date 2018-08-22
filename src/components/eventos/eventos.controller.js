@@ -1,5 +1,6 @@
 class eventosController {
   constructor(){
+    this.title = "Eventos";
     this.listaDeEventos = 
     [ 
       {   
