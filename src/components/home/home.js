@@ -14,6 +14,12 @@ let homeModule = angular.module('homeModule', [uiRouter])
     .state('home', {
       url: '/',
       component: 'home',
+      resolve: {
+        'title': ['$rootScope', function($rootScope){
+          $rootScope.title = "Home | Welcome to great quality foods";
+        }],
+      }
+
     });
 
 })

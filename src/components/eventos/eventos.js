@@ -12,6 +12,12 @@ let eventosModule = angular.module('eventosModule', [uiRouter])
     .state('eventos', {
       url: '/eventos',
       component: 'eventos',
+      resolve: {
+        'title': ['$rootScope', function($rootScope){
+          $rootScope.title = "Eventos | Welcome to great quality foods";
+        }],
+      }
+
     });
 
 })
