@@ -1,0 +1,8 @@
+.reservation-image {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  background: url($reservation-resource) no-repeat center;
+  background-size: cover;
+}
