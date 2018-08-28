@@ -63,3 +63,6 @@ typings/
 # my submissions
 .cache/
 dist/
+
+# folder for tests
+testeHtml/
