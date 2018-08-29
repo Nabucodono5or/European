@@ -5,8 +5,18 @@ import servicesModule from './services/services';
 import aboutModule from './about/about';
 import testimonialsModule from './testimonials/testimonials';
 import subscribeModule from './subscribe/subscribe';
+import googleMapModule from './googleMap/googleMap';
 
-let componentModule = angular.module('componentModule', [homeModule, eventosModule, servicesModule, aboutModule, testimonialsModule, subscribeModule])
+let componentModule = angular.module('componentModule',
+[
+  homeModule,
+  eventosModule,
+  servicesModule, 
+  aboutModule,
+  testimonialsModule,
+  subscribeModule,
+  googleMapModule
+])
 
 .name;
 
