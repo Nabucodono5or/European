@@ -1,0 +1,8 @@
+.discont-image {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  background: url($discont-resource) no-repeat center;
+  background-size: cover;
+}
