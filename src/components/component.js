@@ -7,6 +7,7 @@ import testimonialsModule from './testimonials/testimonials';
 import subscribeModule from './subscribe/subscribe';
 import googleMapModule from './googleMap/googleMap';
 import menuModule from './menu/menu';
+import galleryModule from './gallery/gallery';
 
 let componentModule = angular.module('componentModule',
 [
@@ -17,7 +18,8 @@ let componentModule = angular.module('componentModule',
   testimonialsModule,
   subscribeModule,
   googleMapModule,
-  menuModule
+  menuModule,
+  galleryModule
 ])
 
 .name;
