@@ -8,6 +8,7 @@ import subscribeModule from './subscribe/subscribe';
 import googleMapModule from './googleMap/googleMap';
 import menuModule from './menu/menu';
 import galleryModule from './gallery/gallery';
+import lightboxModule from './lightbox/lightbox';
 
 let componentModule = angular.module('componentModule',
 [
@@ -19,7 +20,8 @@ let componentModule = angular.module('componentModule',
   subscribeModule,
   googleMapModule,
   menuModule,
-  galleryModule
+  galleryModule,
+  lightboxModule
 ])
 
 .name;
