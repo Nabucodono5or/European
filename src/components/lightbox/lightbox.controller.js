@@ -4,6 +4,7 @@ import photo3 from './images/charles-koh-550122-unsplash.jpg';
 import photo4 from './images/christine-siracusa-363257-unsplash.jpg';
 import photo5 from './images/marie-france-latour-458412-unsplash.jpg';
 import photo6 from './images/rawpixel-256640-unsplash.jpg';
+import photo7 from './images/tae-in-kim-13629-unsplash.jpg';
 
 class lightboxController {
   constructor(){
@@ -11,11 +12,11 @@ class lightboxController {
     this.currentIndex = 1;
     this.photos = [
       photo1,
-      photo2,
       photo3,
+      photo2,
       photo4,
       photo5,
-      photo6
+      photo6,
     ];
   }
 
