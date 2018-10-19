@@ -4,7 +4,7 @@ import heroimageModule from './heroImage/heroimage';
 import footerModule from './footer/footer';
 import reservationModule from './reservation/reservation';
 import cartelaMenuModule from './cartelamenu/cartelamenu';
-
+import cardMenuModule from './cardMenu/cardMenu';
 
 
 let commonModule = angular.module('commonModule',
@@ -13,7 +13,8 @@ let commonModule = angular.module('commonModule',
   heroimageModule,
   footerModule,
   reservationModule,
-  cartelaMenuModule
+  cartelaMenuModule,
+  cardMenuModule
 ])
 
 .name;

@@ -100,15 +100,13 @@
         <!-- componente cartela menu com ng-repeat--> 
 
         <div ng-repeat="oferta in $ctrl.ofertas track by $index">
-          <h3>{{ oferta.name }}</h3>
-          <small>{{ oferta.ingredientes }}</small>
-          <h3>${{ oferta.preco }}</h3>
+          <card nome="{{oferta.name}}" ingrediente="oferta.ingredientes" preco="oferta.preco"  ></card>
         </div>
       </uib-tab>
   
       <uib-tab index="1" heading="Sets">
         <!-- componente cartela menu-->
-        <p>Sets</p>
+        <card></card>
       </uib-tab>
   
       <uib-tab index="2" heading="Sushi">
