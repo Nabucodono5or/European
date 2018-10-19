@@ -1,1 +1,131 @@
-<h3>página home</h3>
+<div class="banner">
+  <div>
+    <h2> <span>Welcome to great quality foods</span> </h2>
+    <h2> <span>If you are Looking for great taste</span> </h2>
+    <p>
+      Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+    </p>
+
+    <div><span>Book Now</span></div>
+  </div>
+</div>
+
+<!-- xxxxxxxxxxxxxxxxxxxxx Cartões xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- xxxxxxxxxxxxxxxxxxxxx Cartões xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<div>
+    cartões
+</div>
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxx arcticle xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- xxxxxxxxxxxxxxxxxxxxx article xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<div>
+  <img src="" alt="">
+  <img src="" alt="">
+
+  <h2>
+      Honest food and honest drinks set the foundation of our place’s menu!
+  </h2>
+
+  <p>
+      Our restaurant’s goal is to have each visitor leaving us well-fed and in a better mood than before!
+  </p>
+
+  <p>
+      That is why we put our focus on two things at once. Firstly, on maintaining our menu as fresh and diverse, as possible. And secondly, on creating the atmosphere of home-like coziness and friendliness.
+  </p>
+
+  <img src="" alt="">
+  <img src="" alt="">
+</div>
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxx testimonial xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- xxxxxxxxxxxxxxxxxxxxx testimonial xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+<div class="testimonial" ng-repeat="slide in $ctrl.slides track by $index">
+    <div>
+        <i class="fas fa-quote-left"></i>
+    </div>      
+    
+    <p>
+       {{ slide.testimonial }} 
+    </p>
+
+    <div>
+      <img src="" alt="">
+      <h3>{{ slide.name }}</h3>
+      <small>{{ slide.corporation }} </small>
+    </div>
+</div>
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxx special oferta xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- xxxxxxxxxxxxxxxxxxxxx special oferta xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+<div class="special-oferta">
+  <small>Special Offer</small>
+  <h2>Philadelphia Roll - 8 Pcs</h2>
+  <p>
+      Cream cheese, avocado, cucumber, salmon, sushi rice, nori,
+      pickled ginger, wasabi
+  </p>
+
+  <h2>$14.99</h2>
+
+  <div class="">
+    <p>Order Now</p>
+  </div>
+</div>
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxx special oferta xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- xxxxxxxxxxxxxxxxxxxxx special oferta xxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<div>
+  <h2>Our Menu​</h2>
+  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+
+  <uib-tabset active="true">
+      <uib-tab index="0" heading="Rolls">
+        <!-- componente cartela menu com ng-repeat--> 
+
+        <div ng-repeat="oferta in $ctrl.ofertas track by $index">
+          <h3>{{ oferta.name }}</h3>
+          <small>{{ oferta.ingredientes }}</small>
+          <h3>${{ oferta.preco }}</h3>
+        </div>
+      </uib-tab>
+  
+      <uib-tab index="1" heading="Sets">
+        <!-- componente cartela menu-->
+        <p>Sets</p>
+      </uib-tab>
+  
+      <uib-tab index="2" heading="Sushi">
+        <!-- componente cartela menu-->
+        <p>Sushi</p>
+      </uib-tab>
+  
+      <uib-tab index="3" heading="Sashimi">
+        <!-- componente cartela menu-->
+        <p>Sashimi</p>
+      </uib-tab>
+  
+      <uib-tab index="4" heading="Sources, ginger, wasabi">
+        <!-- componente cartela menu-->
+        <p>Sources, ginger, wasabi</p>
+      </uib-tab>
+  
+    </uib-tabset>
+  
+</div>
