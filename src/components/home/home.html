@@ -100,28 +100,36 @@
         <!-- componente cartela menu com ng-repeat--> 
 
         <div ng-repeat="oferta in $ctrl.ofertas track by $index">
-          <card nome="{{oferta.name}}" ingrediente="oferta.ingredientes" preco="oferta.preco"  ></card>
+          <card nome="oferta.name" ingrediente="oferta.ingredientes" preco="oferta.preco"  ></card>
         </div>
       </uib-tab>
   
       <uib-tab index="1" heading="Sets">
         <!-- componente cartela menu-->
-        <card></card>
+        <div ng-repeat="oferta in $ctrl.ofertas track by $index">
+          <card nome="oferta.name" ingrediente="oferta.ingredientes" preco="oferta.preco"  ></card>
+        </div>
       </uib-tab>
   
       <uib-tab index="2" heading="Sushi">
         <!-- componente cartela menu-->
-        <p>Sushi</p>
+        <div ng-repeat="oferta in $ctrl.ofertas track by $index">
+          <card nome="oferta.name" ingrediente="oferta.ingredientes" preco="oferta.preco"  ></card>
+        </div>
       </uib-tab>
   
       <uib-tab index="3" heading="Sashimi">
         <!-- componente cartela menu-->
-        <p>Sashimi</p>
+        <div ng-repeat="oferta in $ctrl.ofertas track by $index">
+          <card nome="oferta.name" ingrediente="oferta.ingredientes" preco="oferta.preco"  ></card>
+        </div>
       </uib-tab>
   
       <uib-tab index="4" heading="Sources, ginger, wasabi">
         <!-- componente cartela menu-->
-        <p>Sources, ginger, wasabi</p>
+        <div ng-repeat="oferta in $ctrl.ofertas track by $index">
+          <card nome="oferta.name" ingrediente="oferta.ingredientes" preco="oferta.preco"  ></card>
+        </div>
       </uib-tab>
   
     </uib-tabset>
