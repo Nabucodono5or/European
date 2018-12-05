@@ -1,10 +1,13 @@
 import angular from 'angular';
 import aboutComponent from './about.component';
 import uiRouter from 'angular-ui-router';
+import countScrollFactory from './countscrollfactory'; 
 
-let aboutModule = angular.module('aboutModule', [uiRouter])
+let aboutModule = angular.module('aboutModule', [uiRouter, "scrollSpyModule"])
 
   .component('about', aboutComponent)
+
+  .directive('countUp', countScrollFactory)
 
   .config(function($stateProvider){
 
