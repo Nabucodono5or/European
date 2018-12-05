@@ -6,8 +6,11 @@ import photo5 from './images/marie-france-latour-458412-unsplash.jpg';
 import photo6 from './images/rawpixel-256640-unsplash.jpg';
 import photo7 from './images/tae-in-kim-13629-unsplash.jpg';
 
+import imagesLoaded from 'imagesloaded';
+import Masonry from 'masonry-layout';
+
 class lightboxController {
-  constructor(){
+  constructor($scope){
     this.exibir = false;
     this.currentIndex = 1;
     this.photos = [
@@ -18,6 +21,21 @@ class lightboxController {
       photo5,
       photo6,
     ];
+
+    var carregarMasonry = carregarLibraryMsnryLoad;
+
+    $scope.$on('LastRepeaterElement', carregarMasonry);    
+
+    function carregarLibraryMsnryLoad() {
+      var msnry = new Masonry('.grid', {
+        itemSelector: '.grid-item',
+        columnWidth: 200,
+      });
+      
+      imagesLoaded('.grid', function(){
+        msnry.layout();
+      });
+    }
   }
 
 
@@ -43,5 +61,7 @@ class lightboxController {
   }
 
 }
+
+lightboxController.$inject = ['$scope'];
 
 export default lightboxController;

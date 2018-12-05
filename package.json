@@ -24,6 +24,8 @@
     "angular-ui-bootstrap": "^2.5.6",
     "angular-ui-router": "^1.0.19",
     "countup.js": "^1.9.3",
+    "imagesloaded": "^4.1.4",
+    "masonry-layout": "^4.2.2",
     "ngmap": "^1.18.4"
   },
   "devDependencies": {

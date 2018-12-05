@@ -1,5 +1,5 @@
-<div class="bricklayer">
-  <div ng-repeat="photo in $ctrl.photos track by $index" style="margin: 10px; width: 30%">
+<div class="grid">
+  <div class="grid-item" ng-repeat="photo in $ctrl.photos track by $index" style="margin: 10px; width: 30%" emit-last-repeater-element>
     <img ng-click="$ctrl.clickOpenImg($index)" id="myImg" src="{{ photo }}" style="width: 100%; max-width:300px;">
   </div>  
 </div>
